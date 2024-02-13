@@ -81,9 +81,34 @@ class TodosDetails extends StatelessWidget{
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Text(
+              'Titre',
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
             Text(todo.title??"inconnu"),
+            SizedBox(height: 20,),
+            Text(
+              'Complété?',
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
             Text(todo.completed.toString()),
+
+            SizedBox(height: 20,),
+            Text(
+              'Id de la tâche',
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
+            Text(todo.id.toString()),
+            SizedBox(height: 20,),
+            Text(
+              'Id de l\'utilisateur',
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
+            Text(todo.userId.toString()),
+
+
           ],
         ),
       ),
