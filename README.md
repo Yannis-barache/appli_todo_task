@@ -1,16 +1,31 @@
-# td_2
+# TD2 - Flutter
 
-A new Flutter project.
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 
-## Getting Started
+Une appli Flutter pour gérer une liste de tâches.
 
-This project is a starting point for a Flutter application.
+## Installation
+Pour installer l'application, il suffit de cloner le dépôt git et de lancer l'application avec la commande suivante :
+```bash
 
-A few resources to get you started if this is your first Flutter project:
+git clone https://github.com/Yannis-barache/appli_todo_task
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Informations
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+L'application est composée de 3 écrans :
+
+### Card1
+
+Cet écran est la page d'accueil de l'application. Elle permet de visualiser la liste des tâches à effectuer.
+Cet écran est composé de task statique générée via une méthode de la classe Task.
+
+### Card2
+
+Cet écran montre des todos recupérés depuis un JSON.
+
+### Card3
+
+Cet écran permet d'afficher les tâches recupérées depuis une API.
+dont le lien est le suivant : https://jsonplaceholder.typicode.com/todos
